@@ -1,0 +1,57 @@
+/* Variáveis globais  */
+:root {
+    --verde: #84EEC1;
+    --cor-textos: #ffffff;
+    --backgroud: rgba(28, 41, 49, 0.8);
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+}
+
+/* Header */
+header {
+    background: var(--backgroud);
+    border-top: 5px solid var(--verde);
+}
+
+.menu {
+    padding: .5rem 0 1.75rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: lighter;
+    justify-content: center;
+}
+
+.menu div{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu div img{
+    opacity: 95%;
+}
+
+.menu div img:hover{
+    transition: .3s;
+    opacity: 100%;
+}
+
+.menu ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.menu__item a {
+    font-size: 1.25rem;
+    color: var(--cor-textos);
+}
+
+.menu__item a:hover{
+    transition: .3s;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--verde);
+    color: var(--verde);
+}
