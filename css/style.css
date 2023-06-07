@@ -1,6 +1,7 @@
 /* Variáveis globais  */
 :root {
     --verde: #84EEC1;
+    --verde-escuro: #7ddeb7ec;
     --cor-textos: #ffffff;
     --backgroud: rgba(28, 41, 49, 0.8);
 }
@@ -9,37 +10,40 @@ body {
     font-family: "Roboto Slab", serif;
 }
 
+
 /* Header */
 header {
     background: var(--backgroud);
     border-top: 5px solid var(--verde);
+    position: absolute;
+    width: 100%;
 }
 
 .menu {
-    padding: .5rem 0 1.75rem 0;
+    padding: .5rem 0 1rem 0;
     display: flex;
     flex-wrap: wrap;
     font-weight: lighter;
     justify-content: center;
+
 }
 
-.menu div{
+.menu div {
     width: 100%;
-    padding: 1rem 0;
     display: flex;
     justify-content: center;
 }
 
-.menu div img{
+.menu div img {
     opacity: 95%;
 }
 
-.menu div img:hover{
+.menu div img:hover {
     transition: .3s;
     opacity: 100%;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     gap: 1rem;
 }
@@ -49,9 +53,53 @@ header {
     color: var(--cor-textos);
 }
 
-.menu__item a:hover{
+.menu__item a:hover {
     transition: .3s;
     padding-bottom: 2px;
     border-bottom: 1px solid var(--verde);
     color: var(--verde);
+}
+
+/* main */
+
+.destaque {
+    background: url(../imagens/destaque.jpg) center / cover no-repeat;
+    color: var(--cor-textos);
+    padding: 10rem 0 1.5rem 0;
+
+}
+
+.destaque .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 1.2;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .5rem;
+    text-align: center;
+    gap: 1.25rem;
+}
+
+.destaque h2 strong {
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+.destaque button {
+    background: var(--verde);
+    padding: 0.4em;
+    border-radius: .3em;
+    margin: 0 auto;
+    width: 13em;
+    height: 2em;
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+
+.destaque button:hover {
+    transition: .3s;
+    background: var(--verde-escuro);
+    transform: scale(1.1);
 }
