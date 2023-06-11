@@ -104,11 +104,11 @@ header {
 
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     transition: .3s;
     background: var(--verde-escuro);
     transform: scale(1.1);
-    
+
 }
 
 /* Sobre */
@@ -116,7 +116,7 @@ header {
 .sobre {
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     text-align: justify;
     background: var(--backgroud-sobre);
 }
@@ -134,7 +134,7 @@ header {
     font-weight: bold;
     font-size: 1.5em;
     color: var(--cor-titulos-escuros);
-    padding: 1rem 0;
+    padding: 1rem 0 .5rem 0;
 }
 
 .sobre p {
@@ -176,24 +176,24 @@ header {
 
 /* Planos */
 
-.planos{
+.planos {
     padding: 2rem 0;
     background: var(--backgroud-planos);
 }
 
-.planos .titulo__secao{
+.planos .titulo__secao {
     color: white;
 }
 
-.planos__container{
-    display:flex;
+.planos__container {
+    display: flex;
     flex-wrap: wrap;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 }
 
-.planos__container__card{
-    display:grid;
+.planos__container__card {
+    display: grid;
     grid-template-rows: repeat(4, auto);
     grid-template-columns: auto auto;
     align-items: center;
@@ -202,48 +202,48 @@ header {
     margin: .5rem 1rem;
 }
 
-.planos__container__card .subtitulo__secao{
-    color:white;
+.planos__container__card .subtitulo__secao {
+    color: white;
     text-align: center;
     grid-area: 1/1/2/3;
     background: var(--verde-escuro);
     width: 12em;
-    
+
 }
 
-.planos__container__card__preco{
-    color:var(--verde-escuro);
+.planos__container__card__preco {
+    color: var(--verde-escuro);
     text-align: center;
     font-size: 2.5rem;
     grid-area: 2/1/3/3;
     padding: 1rem 0 0.5rem 0;
 }
 
-.planos__container__card__lista{
-    color:var(--cor-titulos-escuros);
+.planos__container__card__lista {
+    color: var(--cor-titulos-escuros);
     grid-area: 3/1/4/3;
 }
 
-.planos__container__card__lista li{
+.planos__container__card__lista li {
     display: flex;
     justify-content: space-between;
-    padding: .65rem ;
+    padding: .65rem;
     border-bottom: 1px solid var(--cor-titulos-escuros);
 }
 
-.planos__container__card__lista li span{
+.planos__container__card__lista li span {
     padding: 0 0 0 1rem;
 }
 
-.planos__container__card__lista li .icon-x{
+.planos__container__card__lista li .icon-x {
     background: url(../imagens/icone-x.png) center / cover no-repeat;
 }
 
-.planos__container__card__lista li .icon-c{
+.planos__container__card__lista li .icon-c {
     background: url(../imagens/icone-ok.png) center / cover no-repeat;
 }
 
-.planos__container__card__btn{
+.planos__container__card__btn {
     padding: 1rem 3rem;
     grid-area: 4/1/5/3;
     background: var(--verde-escuro);
@@ -253,8 +253,82 @@ header {
     box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
 
-.planos__container__card__btn:hover{
-        transition: .3s;
-        background: var(--verde-escuro);
-        transform: scale(1.1);
+.planos__container__card__btn:hover {
+    transition: .3s;
+    background: var(--verde-escuro);
+    transform: scale(1.1);
 }
+
+/* Blog */
+
+.blog{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.blog::after {
+    content: "";
+    background: url(../imagens/fundo.png);
+    background-size: 25px 25px;
+    opacity: .15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    /* z-index especifica a camada, no caso -1 para ficar atrás, so funciona 
+    com elementos position:absolute, relative, fixed ou flex items */
+}
+
+.blog h2{
+    text-align: center;
+    width: 100%;
+}
+
+.blog__populares__post {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog__populares__post img {
+    width: 100%;
+    
+}
+
+.blog .subtitulo__secao{
+    text-align: start;
+}
+
+.blog a{
+    background: url(../imagens/icone-relogio.png) left center no-repeat;
+    color: black;
+    margin: 1.5rem 0 0 0 ;
+    padding-left: 2.25rem;
+    height: 1.7em;
+    display: block;
+}
+
+.blog a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* .blog a {
+    text-decoration: none;
+    color: black;
+    background: url(../imagens/icone-relogio.png) left center no-repeat;
+    padding-left: 2.5em;
+    height: 1.7em;
+    display: block;
+  } */
+
+
+
