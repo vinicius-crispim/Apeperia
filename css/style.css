@@ -116,7 +116,7 @@ header {
 .sobre {
     display: flex;
     flex-direction: column;
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
     text-align: justify;
     background: var(--backgroud-sobre);
 }
@@ -330,5 +330,19 @@ header {
     display: block;
   } */
 
-
+/* Contato */
+.contato{
+   padding: 2rem 2rem;
+   text-align: center;
+}
+.contato form{
+    width: auto;
+}
+.contato form input, textarea{
+    margin: .5rem 0;
+    padding: .5rem;
+    border: 1px solid var(--backgroud-planos);
+    border-radius: .3rem;
+    width: 100%;
+}
 
