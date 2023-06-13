@@ -261,7 +261,7 @@ header {
 
 /* Blog */
 
-.blog{
+.blog {
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -287,7 +287,7 @@ header {
     com elementos position:absolute, relative, fixed ou flex items */
 }
 
-.blog h2{
+.blog h2 {
     text-align: center;
     width: 100%;
 }
@@ -299,17 +299,17 @@ header {
 
 .blog__populares__post img {
     width: 100%;
-    
+
 }
 
-.blog .subtitulo__secao{
+.blog .subtitulo__secao {
     text-align: start;
 }
 
-.blog a{
+.blog a {
     background: url(../imagens/icone-relogio.png) left center no-repeat;
     color: black;
-    margin: 1.5rem 0 0 0 ;
+    margin: 1.5rem 0 0 0;
     padding-left: 2.25rem;
     height: 1.7em;
     display: block;
@@ -319,26 +319,18 @@ header {
     text-decoration: underline;
 }
 
-
-
-/* .blog a {
-    text-decoration: none;
-    color: black;
-    background: url(../imagens/icone-relogio.png) left center no-repeat;
-    padding-left: 2.5em;
-    height: 1.7em;
-    display: block;
-  } */
-
 /* Contato */
-.contato{
-   padding: 2rem 2rem;
-   text-align: center;
+.contato {
+    padding: 2rem 2rem;
+    text-align: center;
 }
-.contato form{
+
+.contato form {
     width: auto;
 }
-.contato form input, textarea{
+
+.contato form input,
+textarea {
     margin: .5rem 0;
     padding: .5rem;
     border: 1px solid var(--backgroud-planos);
@@ -346,3 +338,50 @@ header {
     width: 100%;
 }
 
+/* footer */
+
+footer {
+    display: flex;
+    padding: 2rem 1rem;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer::after {
+    content: "";
+    background: url(../imagens/fundo-rodape.png);
+    opacity: .02;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+footer::before {
+    content: "";
+    background: #1e2c35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+footer .redes-sociais {
+    display:flex;
+}
+
+footer .logo{
+    width: 10rem;
+    height: 3rem;
+}
+
+footer .redes-sociais img {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-left: .75rem;
+}
